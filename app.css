@@ -156,3 +156,22 @@ a {
   background-color: #1a1a1a;
   border: 2px solid #2479fd;
 }
+
+@media (max-width: 600px) {
+    .container{
+        width: 100%;
+    }
+}
+
+@media(max-width: 450px) {
+    .img-container{
+        width: 100%;
+    }
+    .display-options span:hover{
+        background-color: #f7f7f7;
+        color: #1a1a1a;
+    }
+    .mistakes-board{
+        position: relative;
+    }
+}
