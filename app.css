@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+button,
+span {
+  font-family: "Poppins", sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+span,
+a {
+  color: #f7f7f7;
+  text-align: center;
+}
+
+.container {
+  width: 600px;
+  margin: auto;
+  height: 100%;
+  background: linear-gradient(135deg, #1a1a1a, #242424);
+  padding: 10px 15px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.display-board{
+    display: none;
+}
+
+.display-board .horizontal2{
+    display: none;
+}
+
+.mistakes-board{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.mistakes-board__header h3{
+    font-size: 13px;
+    color: #2479fd;
+}
+
+.mistakes-board__svg svg{
+    width: 20px;
+    height: 40px;
+}
+
+.mistakes-board__svg path{
+    fill: #2479fd;
+}
+
+.score-board {
+  width: 150px;
+  height: 150px;
+  width: 80%;
+  margin: auto;
+}
+
+.score-board__svg,
+.mistakes-board__svg {
+  display: flex;
+  justify-content: center;
+}
+
+.score-board__svg svg {
+  width: 60px;
+  height: 100px;
+}
+
+.score-board__svg path {
+  fill: #ffffff;
+}
+
+.display-options {
+  padding: 15px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.display-options span {
+  background-color: #f7f7f7;
+  color: #1a1a1a;
+  font-weight: 600;
+  font-size: 15px;
+  margin: 10px;
+  padding: 5px;
+  width: 250px;
+  height: fit-content;
+  border-radius: 10px;
+}
+
+.display-options span:hover {
+  cursor: pointer;
+  background-color: #2479fd;
+  color: #f7f7f7;
+}
+
+.img-container {
+  width: 400px;
+  height: 200px;
+  margin: 20px auto;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.footer span,
+.footer a {
+  font-size: 13px;
+  color: #828282;
+}
+
+.footer a:hover {
+  color: #2479fd;
+}
+
+#main-btn {
+  width: 150px;
+  height: 50px;
+  margin: auto;
+  color: #f7f7f7;
+  font-size: 20px;
+  font-weight: 550;
+  background-color: #2479fd;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+
+#main-btn:hover {
+  background-color: #1a1a1a;
+  border: 2px solid #2479fd;
+}

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess Country by flag</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./app.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>Welcome to the Game</h1>
+        <h3 class="subtitle1">Guess the country by its flag.</h3>
+        <h3 class="subtitle2">You can miss only 5 times.</h3>
+      </header>
+      <div class="display-board">
+        <div class="score-board">
+          <div class="score-board__header">
+            <h3>Your score:</h3>
+          </div>
+          <div class="score-board__svg">
+            <svg
+              id="digit-svg1"
+              width="167"
+              height="225"
+              viewBox="0 0 167 225"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                class="vertical1"
+                d="M29 121V198L35.5 205.5L42 198V121L35.5 114L29 121Z"
+              />
+              <path
+                class="vertical2"
+                d="M29 24V101L35.5 108.5L42 101V24L35.5 17L29 24Z"
+              />
+              <path
+                class="vertical3"
+                d="M127 24V101L133.5 108.5L140 101V24L133.5 17L127 24Z"
+              />
+              <path
+                class="vertical4"
+                d="M127 121V198L133.5 205.5L140 198V121L133.5 114L127 121Z"
+              />
+              <path
+                class="horizontal1"
+                d="M45 215H122L129.5 208.5L122 202H45L38 208.5L45 215Z"
+              />
+              <path
+                class="horizontal2"
+                d="M45 118H122L129.5 111.5L122 105H45L38 111.5L45 118Z"
+              />
+              <path
+                class="horizontal3"
+                d="M45 20L122 20L129.5 13.5L122 7L45 7L38 13.5L45 20Z"
+              />
+            </svg>
+            <svg
+              id="digit-svg2"
+              width="167"
+              height="225"
+              viewBox="0 0 167 225"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                class="vertical1"
+                d="M29 121V198L35.5 205.5L42 198V121L35.5 114L29 121Z"
+              />
+              <path
+                class="vertical2"
+                d="M29 24V101L35.5 108.5L42 101V24L35.5 17L29 24Z"
+              />
+              <path
+                class="vertical3"
+                d="M127 24V101L133.5 108.5L140 101V24L133.5 17L127 24Z"
+              />
+              <path
+                class="vertical4"
+                d="M127 121V198L133.5 205.5L140 198V121L133.5 114L127 121Z"
+              />
+              <path
+                class="horizontal1"
+                d="M45 215H122L129.5 208.5L122 202H45L38 208.5L45 215Z"
+              />
+              <path
+                class="horizontal2"
+                d="M45 118H122L129.5 111.5L122 105H45L38 111.5L45 118Z"
+              />
+              <path
+                class="horizontal3"
+                d="M45 20L122 20L129.5 13.5L122 7L45 7L38 13.5L45 20Z"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="mistakes-board">
+          <div class="mistakes-board__header">
+            <h3>Your mistakes number:</h3>
+          </div>
+          <div class="mistakes-board__svg">
+            <svg
+              id="digit-svg3"
+              width="167"
+              height="225"
+              viewBox="0 0 167 225"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                class="vertical1"
+                d="M29 121V198L35.5 205.5L42 198V121L35.5 114L29 121Z"
+              />
+              <path
+                class="vertical2"
+                d="M29 24V101L35.5 108.5L42 101V24L35.5 17L29 24Z"
+              />
+              <path
+                class="vertical3"
+                d="M127 24V101L133.5 108.5L140 101V24L133.5 17L127 24Z"
+              />
+              <path
+                class="vertical4"
+                d="M127 121V198L133.5 205.5L140 198V121L133.5 114L127 121Z"
+              />
+              <path
+                class="horizontal1"
+                d="M45 215H122L129.5 208.5L122 202H45L38 208.5L45 215Z"
+              />
+              <path
+                class="horizontal2"
+                d="M45 118H122L129.5 111.5L122 105H45L38 111.5L45 118Z"
+              />
+              <path
+                class="horizontal3"
+                d="M45 20L122 20L129.5 13.5L122 7L45 7L38 13.5L45 20Z"
+              />
+            </svg>
+            <svg
+              id="digit-svg4"
+              width="167"
+              height="225"
+              viewBox="0 0 167 225"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                class="vertical1"
+                d="M29 121V198L35.5 205.5L42 198V121L35.5 114L29 121Z"
+              />
+              <path
+                class="vertical2"
+                d="M29 24V101L35.5 108.5L42 101V24L35.5 17L29 24Z"
+              />
+              <path
+                class="vertical3"
+                d="M127 24V101L133.5 108.5L140 101V24L133.5 17L127 24Z"
+              />
+              <path
+                class="vertical4"
+                d="M127 121V198L133.5 205.5L140 198V121L133.5 114L127 121Z"
+              />
+              <path
+                class="horizontal1"
+                d="M45 215H122L129.5 208.5L122 202H45L38 208.5L45 215Z"
+              />
+              <path
+                class="horizontal2"
+                d="M45 118H122L129.5 111.5L122 105H45L38 111.5L45 118Z"
+              />
+              <path
+                class="horizontal3"
+                d="M45 20L122 20L129.5 13.5L122 7L45 7L38 13.5L45 20Z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div id="img-container" class="img-container"></div>
+      <h3>Let's play!</h3>
+      <div class="display-options">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <button id="main-btn">Play</button>
+      <footer class="footer">
+        <span>Made by</span><a href="https://github.com/angelomarques" target="_blank">Ângelo Marques</a>
+      </footer>
+    </div>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
